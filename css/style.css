@@ -1,23 +1,29 @@
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
   padding: 0;
 }
 body {
   background-color: black;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  /* background-color: dimgray; */
   position: relative;
-  padding: 60px 0;
-  max-width: 800px;
+  max-width: 266px;
+  margin-bottom: 40px;
 }
+
 .hero {
-  padding-top: 122px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 122px 20px 40px;
 }
+
 .hero-title {
   max-width: 335px;
   font-style: normal;
@@ -27,10 +33,24 @@ body {
   letter-spacing: -0.04em;
   color: #ffffff;
   margin: 0 auto;
+  margin-bottom: 60px;
 }
+
+.hero-text {
+  margin-left: auto;
+  margin-bottom: 40px;
+  max-width: 248px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.29; /* 18/14 */
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
 .swiper {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
 }
 
 .swiper-slide {
@@ -53,46 +73,49 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 .button-next {
-  position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 4px;
-  background-image: url(/images/left.svg);
+  background-image: url(../images/left.svg);
   background-position: center;
   background-repeat: no-repeat;
   z-index: 30;
-  top: 85%;
-  left: 32%;
 }
+
 .button-prev {
-  position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(255, 255, 255, 1);
   border-radius: 4px;
-  background-image: url(/images/left.svg);
+  background-image: url(../images/left.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(180deg);
   z-index: 30;
-  top: 85%;
-  left: 25%;
 }
+
+.nav-swip {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .button-prev:active,
 .button-next:active {
   border-color: rgba(255, 255, 255, 0.5);
 }
+
 .button-next-icon {
   width: 24px;
   height: 24px;
   fill: #fff;
 }
 .hero .swiper-pagination-fraction {
-  /* width: 50px; */
-  font-size: 20px;
+  font-size: 12px;
   color: #fff;
-  bottom: 15px;
-  left: 18%;
+  bottom: 0;
+  left: 35%;
 }
