@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <title>Clock</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <h1 class="hero-title">Welcome to our collection of premium watches</h1>
+        <div class="container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/1.jpg" alt="clock" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/2.jpg" alt="clock" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/3.jpg" alt="clock" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/4.jpg" alt="clock" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/5.jpg" alt="clock" />
+              </div>
+            </div>
+            <!-- <div class="button-next">
+              <svg class="button-next-icon">
+                <use href="./images/symbols-defs#send.svg"></use>
+              </svg>
+            </div>
+            <div class="button-prev"></div> -->
+          </div>
+          <div class="button-next"></div>
+          <div class="button-prev"></div>
+          <div class="swiper-pagination swiper-pagination-fraction"></div>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        keyboard: {
+          enabled: true,
+        },
+        navigation: {
+          nextEl: '.button-next',
+          prevEl: '.button-prev',
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'fraction',
+          renderFraction: function (currentClass, totalClass) {
+            return (
+              '0<span class="' +
+              currentClass +
+              '"></span>' +
+              ' _____ ' +
+              '0<span class="' +
+              totalClass +
+              '"></span>'
+            );
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
