@@ -124,7 +124,7 @@ body {
   height: 32px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  background-image: url(/img/1-hero/left.svg);
+  background-image: url(../img/1-hero/left.svg);
   background-position: center;
   background-repeat: no-repeat;
   z-index: 30;
@@ -134,7 +134,7 @@ body {
   height: 32px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
-  background-image: url(/img/1-hero/left.svg);
+  background-image: url(../img/1-hero/left.svg);
   background-position: center;
   background-repeat: no-repeat;
   transform: rotate(180deg);
