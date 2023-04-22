@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
@@ -14,40 +21,173 @@
   <body>
     <main>
       <section class="hero">
-        <h1 class="hero-title">Welcome to our collection of premium watches</h1>
         <div class="container">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <img src="./images/1.jpg" alt="clock" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/2.jpg" alt="clock" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/3.jpg" alt="clock" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/4.jpg" alt="clock" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./images/5.jpg" alt="clock" />
+          <h1 class="hero-title">
+            Welcome to our collection of premium watches
+          </h1>
+          <div class="block-slider">
+            <div class="hero-slider">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/1-hero/1clock-tabl1x.jpg 1x,
+                          ./img/1-hero/1clock-tabl2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/1-hero/1clock-mob1x.jpg 1x,
+                          ./img/1-hero/1clock-mob2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/1-hero/1clock-tabl1x.jpg"
+                        width="436"
+                        height="235"
+                        alt="clocks model"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/1-hero/2clock-tabl1x.jpg 1x,
+                          ./img/1-hero/2clock-tabl2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/1-hero/2clock-mob1x.jpg 1x,
+                          ./img/1-hero/2clock-mob2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/1-hero/2clock-tabl1x.jpg"
+                        width="436"
+                        height="235"
+                        alt="clocks model"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/1-hero/3clock-tabl1x.jpg 1x,
+                          ./img/1-hero/3clock-tabl2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/1-hero/3clock-mob1x.jpg 1x,
+                          ./img/1-hero/3clock-mob2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/1-hero/3clock-tabl1x.jpg"
+                        width="436"
+                        height="235"
+                        alt="clocks model"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/1-hero/4clock-tabl1x.jpg 1x,
+                          ./img/1-hero/4clock-tabl2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/1-hero/4clock-mob1x.jpg 1x,
+                          ./img/1-hero/4clock-mob2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/1-hero/4clock-tabl1x.jpg"
+                        width="436"
+                        height="235"
+                        alt="clocks model"
+                      />
+                    </picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture>
+                      <source
+                        srcset="
+                          ./img/1-hero/5clock-tabl1x.jpg 1x,
+                          ./img/1-hero/5clock-tabl2x.jpg 2x
+                        "
+                        media="(min-width: 768px)"
+                      />
+                      <source
+                        srcset="
+                          ./img/1-hero/5clock-mob1x.jpg 1x,
+                          ./img/1-hero/5clock-mob2x.jpg 2x
+                        "
+                        media="(max-width: 767px)"
+                      />
+                      <img
+                        src="./img/1-hero/5clock-tabl1x.jpg"
+                        width="436"
+                        height="235"
+                        alt="clocks model"
+                      />
+                    </picture>
+                  </div>
+                </div>
               </div>
             </div>
+            <div class="nav-swip">
+              <div class="button-prev"></div>
+              <div class="button-next"></div>
+              <div class="swiper-pagination swiper-pagination-fraction"></div>
+            </div>
           </div>
-          <div class="nav-swip">
-            <div class="button-prev"></div>
-            <div class="button-next"></div>
-          </div>
-          <div class="swiper-pagination swiper-pagination-fraction"></div>
-        </div>
-        <p class="hero-text">
-          Our watches are not just timepieces, but also an expression of your
-          personality and lifestyle. From classic designs to modern ones, we
-          have a watch to suit every taste and occasion.
-        </p>
-        <div class="hero-images">
-          <img src="./images/hero_mob1x.jpg" alt="clock on hand" />
+          <p class="hero-text">
+            Our watches are not just timepieces, but also an expression of your
+            personality and lifestyle. From classic designs to modern ones, we
+            have a watch to suit every taste and occasion.
+          </p>
+          <picture>
+            <source
+              srcset="
+                ./img/1-hero/hero-dtop1x.jpg 1x,
+                ./img/1-hero/hero-dtop2x.jpg 2x
+              "
+              media="(min-width: 1200px)" />
+            <source
+              srcset="
+                ./img/1-hero/hero-tabl1x.jpg 1x,
+                ./img/1-hero/hero-tabl2x.jpg 2x
+              "
+              media="(min-width: 768px)" />
+            <source
+              srcset="
+                ./img/1-hero/hero-mob1x.jpg 1x,
+                ./img/1-hero/hero-mob2x.jpg 2x
+              "
+              media="(max-width: 767px)" />
+            <img
+              src="./img/1-hero/1clock-tabl1x.jpg"
+              width="704"
+              height="410"
+              alt="clocks model"
+          /></picture>
         </div>
       </section>
     </main>
@@ -72,7 +212,6 @@
               '0<span class="' +
               currentClass +
               '"></span>' +
-              ' _____ ' +
               '0<span class="' +
               totalClass +
               '"></span>'
